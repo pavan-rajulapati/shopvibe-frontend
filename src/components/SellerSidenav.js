@@ -1,5 +1,4 @@
 import {React} from 'react'
-import { useNavigate } from 'react-router-dom';
 import '../styles/seller.css'
 import '../styles/sellerSidenav.css'
 import { IoIosCube, IoMdAdd } from "react-icons/io";

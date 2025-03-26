@@ -29,6 +29,7 @@ const store = configureStore({
 		addCartItem : AddCartItemReducer,
 		getCartItem : GetCartItemReducer
 	},
+	devTools: process.env.NODE_ENV !== "production",
 });
 
 export default store;

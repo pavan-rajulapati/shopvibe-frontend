@@ -11,7 +11,7 @@ import { UserDataAction } from '../redux/actions/userData.action';
 const SellerRegistration = () => {
 
 	const dispatch = useDispatch()
-	const {loading, error} = useSelector((state) => state.addSeller)
+	const {loading} = useSelector((state) => state.addSeller)
 	const data = useSelector((state) => state.userData)
 	const navigate = useNavigate()
 	const [step, setStep] = useState(1); 
@@ -139,7 +139,7 @@ const SellerRegistration = () => {
 								name="profilePic"
 								onChange={handleFileChange}
 								/>
-								<img src={sellerRegisterData.profilePic ? URL.createObjectURL(sellerRegisterData.profilePic) : "/photos/user.avif"}></img>
+								<img src={sellerRegisterData.profilePic ? URL.createObjectURL(sellerRegisterData.profilePic) : "/photos/user.avif"} alt='profilepic'></img>
 							</label>
 							<label>
 								Name:

@@ -8,7 +8,6 @@ import toast from 'react-hot-toast';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FaRegUser } from "react-icons/fa";
-import Cookies from 'js-cookie';
 
 const Signup = () => {
 

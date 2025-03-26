@@ -7,7 +7,6 @@ import GoogleLogin from '../components/GoogleLogin';
 import toast from 'react-hot-toast';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import Cookies from 'js-cookie';
 
 const Signin = () => {
   const [userData, setUserData] = useState({

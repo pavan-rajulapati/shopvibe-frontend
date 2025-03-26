@@ -6,7 +6,6 @@ import { GetProductByIdAction } from '../redux/actions/getProductById.action';
 import Loader from './Loader';
 import { toast, Toaster } from 'react-hot-toast';
 import { MdFavoriteBorder } from "react-icons/md";
-import { FaMinus, FaPlus } from "react-icons/fa";
 import ProductAbout from './ProductAbout';
 import Review from './Review';
 import { ReviewAction } from '../redux/actions/review.action';
@@ -30,7 +29,7 @@ const Product = () => {
     });
     const navigate = useNavigate()
 
-    const { loading: cartItemLoading, data: cartDataState, error: cartItemError, status: cartItemStatus } = useSelector((state) => state.addCartItem);
+    const { loading: cartItemLoading, error: cartItemError } = useSelector((state) => state.addCartItem);
 
     useEffect(() => {
         try {
@@ -48,16 +47,6 @@ const Product = () => {
 
     if (loading) return <Loader />;
     if (!items) return <div>No product found</div>;
-
-    const increaseQuantity = () => {
-        setQuantity(prevQuantity => prevQuantity + 1);
-    };
-
-    const decreaseQuantity = () => {
-        if (quantity !== 1) {
-            setQuantity(prevQuantity => prevQuantity - 1);
-        }
-    };
 
     const calculateOverallRating = (reviews) => {
         if (!Array.isArray(reviews) || reviews.length === 0) return 0;
@@ -80,13 +69,6 @@ const Product = () => {
         }));
     };
 
-    const handleQuantityChange = (event) => {
-        const newQuantity = parseInt(event.target.value, 10); 
-        setCartData((prevData) => ({
-            ...prevData,
-            quantity: newQuantity,
-        }));
-    };
 
     if(cartItemLoading) return (<Loader></Loader>);
     if(cartItemError) return (toast.error(cartItemError));

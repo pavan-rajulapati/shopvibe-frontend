@@ -1,7 +1,5 @@
 import React from 'react'
 import '../styles/productAbout.css'
-import ProductDescription from './ProductDescription'
-import Review from './Review'
 
 const ProductAbout = () => {
   return (
