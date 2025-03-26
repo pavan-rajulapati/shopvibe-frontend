@@ -1,0 +1,120 @@
+.seller-form{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.seller-form .container{
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    border: solid 1px #b3b3b3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+}
+
+.seller-form .container .progress-bar-container{
+    padding: 0px;
+    border-radius: 4px;
+    border: solid 1px #949494;  
+    margin-bottom: 10px;
+}
+
+.seller-form form{
+    display: flex;
+}
+
+.seller-form form h2{
+    text-align: center;
+    margin: 4px 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.seller-form .personal-info:not(.buttons){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seller-form .personal-info .profile-photo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input{
+        width: 100%;
+        overflow: hidden;
+        opacity: 0;
+    }
+}
+
+
+.seller-form form div{
+    display: flex;
+    flex-direction: column;
+
+    label{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 7px;
+        font-size: large;
+
+        input{
+            width: 300px;
+            height: 32px;
+            margin: 8px 0px;
+            padding: 0px 4px;
+            outline: none;
+            font-weight: bold;
+
+        }
+
+        input::placeholder{
+            color: #a3a3a3;
+            font-weight: 100;
+            letter-spacing: .5px;
+        }
+
+
+        img{
+            width: 100%;
+            position: absolute;
+            object-fit: cover;
+        }
+
+    }
+}
+
+.seller-form .buttons{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    button{
+        width: 100%;
+        padding: 8px 16px;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(8, 0, 50);
+        color: white;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        margin: 0px 4px;
+    }
+}
+
+
+    

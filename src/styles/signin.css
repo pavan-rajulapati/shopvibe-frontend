@@ -1,0 +1,145 @@
+.signin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfdfdf;
+}
+
+.signin .head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.signin p{
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signin .container{
+    border: solid 1px #feebeb;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.signin form div:not(.btn){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    margin: 15px 0px;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.signin span{
+    font-size: 18px;
+    margin-right:10px ;
+}
+
+.signin .password span{
+    cursor: pointer;
+}
+
+.signin input{
+    outline: none;
+    border: none;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.signin .btn{
+    width: 100%;
+}
+
+.signin .btn button{
+    width: 100%;
+    height: 35px;
+    background-color: #333;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 0px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.signin .or-divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+  
+.signin .or-divider span {
+    padding: 0 10px;
+    background-color: white;
+}
+
+.signin .or-divider::before,
+.signin .or-divider::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.googleLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: bold;
+    border: solid 1px #ccc;
+}
+
+.googleLogin span{
+    display: flex;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.googleLogin svg{
+    margin-right: 10px;
+}
+
+.signin .exist{
+    margin-top: 20px;
+}
+
+.signin .exist a{
+    margin-left: 3px;
+}
+
+@media only screen and (max-width: 767px) {
+    .signin{
+        height: fit-content;
+        margin-top: 40%;
+        background-color: transparent;
+    }
+
+    .signin .container{
+        border: solid #eaeaea;
+    }
+
+    .signin input{
+        width: 250px;
+    }
+}
+  
+  

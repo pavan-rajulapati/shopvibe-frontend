@@ -1,0 +1,20 @@
+.seller{
+    width: 100%;
+    height: auto;
+}
+
+.seller .container{
+    margin: 5px;
+    display: flex;
+}
+
+.seller .sideNav{
+    width: 13%;
+    background-color: rgb(0, 0, 0);
+    height: 90vh;
+}
+
+.seller .sections{
+    width: 87%;
+    padding: 0px 10px;
+}

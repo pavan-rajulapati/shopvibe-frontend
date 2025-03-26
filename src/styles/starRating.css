@@ -1,0 +1,19 @@
+.star-rating-container {
+	display: flex;
+    margin: 4px 0px;
+}
+
+.star-rating-container span{
+    font-size: 18px;
+    margin: 0px 2px;
+}
+
+.star-filled {
+	color: gold; /* Yellow for filled stars */
+    
+}
+
+.star-empty {
+	color: lightgray; /* Light gray for empty stars */
+}
+

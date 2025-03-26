@@ -1,0 +1,24 @@
+.product-container{
+    display: flex;
+    padding: 10px;
+}
+
+.product-container .side-nav{
+    width: 20%;
+    height: 100vh;
+    background-color: gray;
+}
+
+.product-container .main-section{
+    width: 80%;
+}
+
+@media only screen and (max-width : 767px){
+    .product-container .side-nav{
+        display: none;
+    }
+
+    .product-container .main-section{
+        width: 100%;
+    }
+}

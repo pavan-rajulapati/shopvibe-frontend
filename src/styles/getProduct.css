@@ -1,0 +1,93 @@
+.Get-Product{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.Get-Product .container .items-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.Get-Product .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px rgb(236, 236, 236);
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.Get-Product .item .image-section {
+    width: 200px; 
+    height: 250px; 
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+    }
+}
+
+.Get-Product .info-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Get-Product .info-section div:first-child{
+    margin: 2px 0px;
+
+    span{
+        color: #313131;
+    }
+
+    p{
+        color: rgb(108, 108, 108);
+        margin-top: 2px;
+    }
+}
+
+.Get-Product .info-section div:last-child{
+    h4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
+
+        svg{
+            font-weight: 100;
+        }
+    }
+}
+
+.Get-Product .pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+
+    button{
+        padding: 6px 24px;
+        margin: 0px 25px;
+        cursor: pointer;
+        background-color: navy;
+        color: whitesmoke;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .disable{
+        cursor: not-allowed;
+    }
+}

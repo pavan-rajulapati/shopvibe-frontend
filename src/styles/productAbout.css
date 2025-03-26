@@ -1,0 +1,23 @@
+.about-product{
+    margin-top: 20px;
+}
+
+.about-product .container{
+    width: 100%;
+}
+
+.about-product nav{
+    width: 100%;
+    padding: 4px 25%;
+    border-bottom: solid 1px #ccc;
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li:hover{
+        border-bottom: solid;
+        cursor: pointer;
+    }
+}
+

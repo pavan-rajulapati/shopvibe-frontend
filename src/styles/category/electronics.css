@@ -1,0 +1,50 @@
+.electronics-category-section{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.electronics-category-section .container{
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 12px;
+}
+
+.electronics-category-section .container::-webkit-scrollbar{
+    display: none;
+}
+
+.electronics-category-section .card-section{
+    width: auto;
+    height: auto;
+    margin: 0px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+    .image-section{
+        width: 250px;
+        height: auto;
+        object-fit: contain;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+.electronics-category-section .info-section{
+    margin-top: 4px;
+
+    p{
+        color: #333;
+    }
+}

@@ -1,0 +1,74 @@
+.fashion-category-section{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.fashion-category-section .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    margin-top: 12px;
+    gap: 15px;
+}
+
+.fashion-category-section .container .mens-ware{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+}
+
+.fashion-category-section .container .womens-ware{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+}
+
+.fashion-category-section .container::-webkit-scrollbar{
+    display: none;
+}
+
+.fashion-category-section .card-section{
+    width: auto;
+    height: auto;
+    margin: 0px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+    .image-section{
+        width: 240px;
+        height: 300px;
+        object-fit: contain;
+        margin: 6px 0px;
+
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+}
+
+.fashion-category-section .info-section{
+    margin-top: 4px;
+
+    p{
+        color: #333;
+    }
+}

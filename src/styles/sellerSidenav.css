@@ -1,0 +1,40 @@
+.seller-sidenav{
+    color: rgb(255, 255, 255);
+}
+
+.seller-sidenav .container{
+    display: flex;
+    padding: 10px 5px;
+}
+
+.seller-sidenav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seller-sidenav ul li{
+    display: flex;
+    align-items: center;
+    margin: 7px 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+
+    svg{
+        margin-top: 5px;
+    }
+
+    P{
+        margin-left: 8px;
+        cursor: pointer;
+    }
+}
+
+.seller-sidenav li:hover{
+    background-color: #1f1c1c;
+    cursor: pointer;
+}
+

@@ -1,0 +1,38 @@
+.sub-nav{
+    width: 100%;
+    height: auto;
+    padding: 4px 10px;
+}
+
+.sub-nav .container{
+    width: 100%;
+    display: flex;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.sub-nav .container .nav{
+    width: 100%;
+    padding: 2px 8px;
+}
+
+.sub-nav .container nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+
+    li{
+        border: solid 1px;
+        padding: 2px 8px;
+        cursor: pointer;
+        border-radius: 4px; 
+        transition: ease .3s;
+    }
+
+    li:hover{
+        background-color: black;
+        color: white;
+    }
+}

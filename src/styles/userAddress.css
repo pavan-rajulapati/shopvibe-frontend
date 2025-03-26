@@ -1,0 +1,153 @@
+.userAddress {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.userAddress .container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px; 
+  background-color: #fff; 
+}
+
+.userAddress form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  width: 100%;
+}
+
+/* <------------------------------------- Image Section ------------------------------------> */
+
+.userAddress .imageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(9, 15, 9);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+}
+
+.userAddress .imageSection img {
+  width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+/* <------------------------------ Input Fields ---------------------------------> */
+
+.userAddress .inputs {
+  display: grid;
+  grid-template-areas: 
+    "name name"
+    "mobileNumber landMark"
+    "street city"
+    "pincode state"
+    "country country"
+    "holderName bankName"
+    "accountNumber ifscCode";
+  gap: 10px;
+}
+
+.userAddress .name {
+  grid-area: name;
+}
+
+.userAddress .mobileNumber {
+  grid-area: mobileNumber;
+}
+
+.userAddress .landMark {
+  grid-area: landMark;
+}
+
+.userAddress .street {
+  grid-area: street;
+}
+
+.userAddress .city {
+  grid-area: city;
+}
+
+.userAddress .pincode {
+  grid-area: pincode;
+}
+
+.userAddress .state {
+  grid-area: state;
+}
+
+.userAddress .country {
+  grid-area: country;
+}
+
+.userAddress .holderName {
+  grid-area: holderName;
+}
+
+.userAddress .bankName {
+  grid-area: bankName;
+}
+
+.userAddress .accountNumber {
+  grid-area: accountNumber;
+}
+
+.userAddress .ifscCode {
+  grid-area: ifscCode;
+}
+
+.userAddress label{
+  display: flex;
+  flex-direction: column;
+}
+
+.userAddress input{
+  padding: 2px 6px;
+  height: 30px;
+  margin-top: 4px;
+  outline: none;
+}
+
+.userAddress .inputs input:focus {
+  border-width: 1.5px;
+  border-color: black; 
+  background-color: #ffffff; 
+  border-radius: 4px;
+}
+
+.userAddress .submit-section{
+  width: 100%;
+  margin-top: 15px;
+
+  button{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 128);
+    border: none;
+    padding: 4px 0px;
+    border-radius: 4px;
+    color: white;
+    letter-spacing: 1.5px;
+  }
+
+  button:hover{ 
+    background-color: rgb(0, 0, 164);
+  }
+}

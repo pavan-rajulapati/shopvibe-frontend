@@ -1,0 +1,219 @@
+.add-product{
+    width: 100%;
+    height: auto;
+    padding:5px 10px;
+    margin: 0;
+    background-color: rgb(8, 8, 50);
+    color: whitesmoke;
+    border-radius: 8px;
+}
+
+.add-product .container{
+    width: 100%;
+}
+
+.add-product .product-form{
+    width: 100%;
+}
+
+.add-product form{
+    width: 100%;
+}
+
+.add-product .product-info{
+    width: 100%;
+    display: grid;
+}
+
+.add-product .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    border: none;
+    background-color: rgba(5, 5, 50);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-bottom:solid 1px rgb(53, 53, 53);
+}
+
+.add-product .header .text p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.add-product .header .Btn button{
+    margin: 0px 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.add-product .header .Btn button:first-child{
+    border: solid 1px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+}
+
+.add-product .header .Btn button:last-child{
+    border: none;
+    padding: 7px 10px;
+    border-radius: 4px;
+    background-color: #4285f4;
+    color: rgb(255, 255, 255); 
+}
+
+.add-product .container .images{
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: solid 1px rgb(53, 53, 53);
+    padding-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.add-product .container .images .image-input{
+    width: 15%;
+    height: 100px;
+    border: solid 1px white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    input{
+        padding: 100px;
+    }
+
+    label{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    svg{
+        font-size: 35px;
+        color: white;
+    }
+
+}
+
+.add-product .container .images .image-preview{
+    width: 85%;
+    margin-left: 20px;
+    display: flex;
+    overflow-x: scroll;
+
+    img{
+        width: 150px;
+        height: 100px;
+        border-radius: 4px;
+        margin: 0px 10px;
+    }
+}
+
+.add-product .container .images .image-preview::-webkit-scrollbar{
+    display: none;
+}
+
+.add-product .container .product-details{
+    display: grid;
+    grid-template-areas: 
+    "product-name brand stock"
+    "description description colors"
+    "sale-price actual-price category"
+    "sizes sizes warranty";
+    gap: 20px 40px;
+}
+
+.add-product .product-details .product-name{
+    grid-area: product-name;
+}
+
+.add-product .product-details .brand{
+    grid-area: brand;
+}
+
+.add-product .product-details .stock{
+    grid-area: stock;
+}
+
+.add-product .product-details .description{
+    grid-area: description;
+}
+
+.add-product .product-details .colors{
+    grid-area: colors;
+}
+
+.add-product .product-details .sale-price{
+    grid-area: sale-price;
+}
+
+.add-product .product-details .actual-price{
+    grid-area: actual-price;
+}
+
+.add-product .product-details .category{
+    grid-area: category;
+
+    option{
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.add-product .product-details .sizes{
+    grid-area: sizes;
+
+    ul{
+        display: flex;
+        margin: 8px 0px;
+
+        li{
+            padding: 4px 8px;
+            margin: 0px 5px;
+            background-color: transparent;
+            border: solid 1px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.add-product .product-details .warranty{
+    grid-area: warranty;
+}
+
+.add-product .product-details div label{
+    display: flex;
+    flex-direction: column;
+
+    input,textarea, select{
+        width: 80%;
+        height: 30px;
+        padding: 5px;
+        border: solid 1px white;
+        background-color: transparent;
+        border-radius: 4px;
+        color: white;
+        margin-top: 4px;
+    }
+
+    textarea{
+        height: 90px;
+    }
+}
+
+.add-product .note{
+    display: flex;
+
+    svg{
+        margin-right: 5px;
+    }
+}
+
+
