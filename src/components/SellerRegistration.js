@@ -139,7 +139,7 @@ const SellerRegistration = () => {
 								name="profilePic"
 								onChange={handleFileChange}
 								/>
-								<img src={sellerRegisterData.profilePic ? URL.createObjectURL(sellerRegisterData.profilePic) : "/photos/user.avif"} alt='profilepic'></img>
+								<img src={sellerRegisterData.profilePic ? URL.createObjectURL(sellerRegisterData.profilePic) : "https://res.cloudinary.com/dxrfohx12/image/upload/v1742103110/user_btwidw.avif"} alt='profilepic'></img>
 							</label>
 							<label>
 								Name:

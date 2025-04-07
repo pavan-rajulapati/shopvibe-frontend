@@ -20,7 +20,7 @@ const SellerEnterPage = () => {
 						</div>
 					</div>
 					<div className="image-section">
-						<img src="/photos/seller-homepage-img.png" alt="seller-image" width={400} />
+						<img src="https://res.cloudinary.com/dxrfohx12/image/upload/v1742103131/seller-homepage-img_yzroax.png" alt="seller-image" width={400} />
 					</div>
 				</div>
 			</div>

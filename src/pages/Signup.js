@@ -77,7 +77,7 @@ const Signup = () => {
 		<div className='signup-main-container'>
 			<div className='signup-container'>
 				<div className='image-section'>
-					<img src="photos\5179440.jpg" alt="signup-image" />
+					<img src="https://res.cloudinary.com/dxrfohx12/image/upload/v1742102921/5179440_vryrej.jpg" alt="signup-image" />
 				</div>
 					<div>
 					<div className="signup">

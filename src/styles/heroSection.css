@@ -76,3 +76,65 @@
         background-size: contain;
     }
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero .info {
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero .info .heading {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .hero .info .sub {
+        font-size: 16px;
+    }
+
+    .hero .info .btn button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .hero .image-section {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .hero .image-section img {
+        max-height: 300px;
+        object-fit: contain;
+    }
+}
+
+/* Extra large screens (e.g., 1200px and above) */
+@media (min-width: 1200px) {
+    .hero .info .heading {
+        font-size: 36px;
+        line-height: 52px;
+    }
+
+    .hero .info .sub {
+        font-size: 20px;
+    }
+
+    .hero .info .description {
+        font-size: 18px;
+    }
+
+    .hero .info .btn button {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+}

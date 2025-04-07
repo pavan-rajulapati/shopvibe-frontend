@@ -22,6 +22,7 @@ import ProtectedRoutes from './middleware/ProtectedRoutes';
 import SellerRegistration from './components/SellerRegistration';
 import StarRating from './middleware/StarRating';
 import Footer from './components/Footer';
+import PageNotFound from './errors/PageNotFound';
 
 const App = () => {
     return (
@@ -48,6 +49,7 @@ const App = () => {
                     <Route path="/payment/failure" element={<ProtectedRoutes><PaymentFailure /></ProtectedRoutes>} />
                     <Route path="seller/registration" element={<ProtectedRoutes><SellerRegistration /></ProtectedRoutes>} />
                     <Route path="rating" element={<ProtectedRoutes><StarRating /></ProtectedRoutes>} />
+                    <Route path="*" element={<PageNotFound />} />
                 </Routes>
                 <Footer/>
             </BrowserRouter>

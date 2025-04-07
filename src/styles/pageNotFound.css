@@ -1,0 +1,63 @@
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    min-height: 100vh;
+    text-align: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-not-found img {
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.page-not-found p {
+    font-size: 18px;
+    color: #333;
+    margin: 8px 0;
+}
+
+.page-not-found .message {
+    margin-top: 10px;
+}
+
+.page-not-found .message p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.page-not-found .message button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a60ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.page-not-found .message button:hover {
+    background-color: #2e44cc;
+}
+
+@media (max-width: 768px) {
+    .page-not-found span {
+        font-size: 48px;
+    }
+
+    .page-not-found p {
+        font-size: 16px;
+    }
+
+    .page-not-found .message button {
+        width: 100%;
+        max-width: 220px;
+    }
+}
